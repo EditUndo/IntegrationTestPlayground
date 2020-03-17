@@ -1,0 +1,2 @@
+rootProject.name='IntegrationPlayground'
+include ':app'
