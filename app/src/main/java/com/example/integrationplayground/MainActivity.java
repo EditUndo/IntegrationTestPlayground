@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
         //https://www.facebook.com/sherrymj12
         //fb://facewebmodal/f?href="
         //fb://page/1399666226
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=" + "https://www.facebook.com/jamie.addison.16"));
-
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=" + "https://www.facebook.com/1399666226"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/100008023908401"));
         startActivity(browserIntent);
 
     }
@@ -151,10 +151,11 @@ public class MainActivity extends AppCompatActivity {
                     String lastName = object.getString("last_name");
                     String email = object.getString("email");
                     String id = object.getString("id");
+                    String username = object.toString();
                     //String link = object.getString("link");
                     String image_url = "https://graph.facebook.com/" + id + "/picture?type=normal";
 
-                    txtName.setText(firstName + " " + lastName + " " + email);
+                    txtName.setText(firstName + " " + lastName + " " + email + " " + username);
                     txtID.setText(id);
                     //txtLink.setText(link);
 
