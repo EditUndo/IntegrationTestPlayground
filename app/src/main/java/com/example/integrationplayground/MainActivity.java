@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         //https://www.facebook.com/sherrymj12
         //fb://facewebmodal/f?href="
         //fb://page/1399666226
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/1399666226"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=" + "https://www.facebook.com/jamie.addison.16"));
 
         startActivity(browserIntent);
 
